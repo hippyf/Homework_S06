@@ -55,7 +55,7 @@ void OrderedArray(int[,] array)
         for (int j = 0; j < columns - 1; j++)
         {
             for (int k = j + 1; k < columns; k++)
-            if (array [i, k] < array [i, j]) (array[i, j], array[i, k]) = (array[i,k], array [i,j]);
+            if (array [i, k] > array [i, j]) (array[i, j], array[i, k]) = (array[i,k], array [i,j]);
         }
 
     }
